@@ -1,0 +1,185 @@
+//libs
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import "lib/rs";
+@import "lib/rs-default";
+@import "base";
+//widgets
+@import "widgets/header";
+@import "widgets/footer";
+//components
+@import "widgets/figure";
+@import "components/form";
+
+h2 {
+  text-transform: capitalize;
+  color: #666d89;
+  font: bold 30px "Lato Bold", sans-serif;
+  padding-bottom: 30px;
+}
+
+h3 {
+  text-transform: capitalize;
+  color: #666d89;
+  font: bold 18px "Lato Black", sans-serif;
+  padding-bottom: 8px;
+}
+
+p {
+  color: #767e9e;
+}
+
+.slider {
+  height: 600px;
+  background-color: #eb5055;
+  border-bottom: 5px solid #ea676b;
+  padding: 65px 40px;
+
+  .royalSlider {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.services {
+  height: 100%;
+  max-height: 495px;
+  background-color: #f2f2f2;
+  border-bottom: 5px solid #fff;
+  padding: 65px 40px;
+
+  & > p {
+    padding-bottom: 50px;
+    line-height: 30px;
+  }
+}
+
+.portfolio {
+  height: 100%;
+  max-height: 865px;
+  background-color: #303441;
+  border-bottom: 5px solid #373b4a;
+  padding: 65px 40px;
+
+  & > p {
+    padding-bottom: 15px;
+  }
+
+  a:hover, li:hover {
+    color: #fff;
+    border-color: #fff;
+
+  }
+
+  ul {
+    li {
+      margin: 0 5px 15px 0;
+      padding: 0 5px;
+      @include border-radius(5px);
+      border: 1px solid #666d89;
+
+      a {
+        font-size: 12px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #666d89;
+      }
+    }
+  }
+
+  figure {
+    display: inline-block;
+    padding: 10px 10px 10px 0;
+    figcaption {
+      display: none;
+      p{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.about-us {
+  height: 100%;
+  max-height: 730px;
+  background-color: #f2f2f2;
+  border-bottom: 5px solid #fff;
+  padding: 65px 40px;
+
+  & > p {
+    padding-bottom: 15px;
+    line-height: 30px;
+  }
+
+  figure {
+    display: inline-block;
+    height: 450px;
+    width: 300px;
+    margin: 20px 8px 20px 0;
+    img {
+      margin: 20px 0;
+    }
+    figcaption {
+      p {
+        font: 12px "Lato Regular", sans-serif;
+        line-height: 19px;
+      }
+    }
+  }
+
+}
+
+.quote {
+  @include clearfix;
+  height: 100%;
+  max-height: 655px;
+  background-color: #eb5055;
+  border-bottom: 5px solid #ea676b;
+  padding: 65px 40px;
+
+  & > p {
+    color: #fff;
+    padding-bottom: 15px;
+    line-height: 30px;
+  }
+
+  h2 {
+    color: #fff;
+    span {
+      text-transform: lowercase;
+    }
+  }
+
+  .contacts {
+    margin-top: 15px;
+    width: 300px;
+    float: right;
+    color: #fff;
+    h3 {
+      color: #fff;
+    }
+    p {
+      font: 12px "Lato Regular", sans-serif;
+      line-height: 19px;
+      color: #fff;
+    }
+    ul {
+      margin-top: 30px;
+      li {
+        display: block;
+        font: 12px "Lato Regular", sans-serif;
+        line-height: 19px;
+        color: #fff;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

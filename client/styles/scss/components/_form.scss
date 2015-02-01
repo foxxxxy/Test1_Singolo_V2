@@ -1,0 +1,59 @@
+form {
+  float: left;
+  width: 600px;
+  input {
+    width: 100%;
+    height: 38px;
+    margin: 15px 0;
+    padding: 5px 0 0 10px;
+    display: block;
+    background-color: #ca4549;
+    border: none;
+    @include border-radius(5px);
+
+    &::-webkit-input-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+    &::-moz-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+    &:-moz-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+    &:-ms-input-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+
+  }
+
+  textarea {
+    height: 200px;
+    width: 100%;
+    padding: 15px 0 0 10px;
+    resize: none;
+    background-color: #ca4549;
+    border: none;
+    @include border-radius(5px);
+
+    &::-webkit-input-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+    &::-moz-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+    &:-moz-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+    &:-ms-input-placeholder {
+      font: 12px "Lato Regular", sans-serif;
+      color: #f48c8f;
+    }
+  }
+}
